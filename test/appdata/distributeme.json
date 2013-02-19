@@ -1,0 +1,23 @@
+{
+	registryContainerPort: 9229,
+	registryContainerHost: "localhost",
+	
+	//if true the server will log all exceptions including expected exception (defined by the interface), otherwise expected exceptions will be ignored
+	logServerSideExceptions: false,
+	//if true the client (stub) will log all caught exceptions (remote exception and runtime exceptions)
+	logClientSideExceptions: false,
+	
+	
+	//"listener.1": "org.distributeme.core.listener.ServerLifecycleSysOutPrinterListener",
+	//"interceptor.1": "org.distributeme.core.interceptor.availabilitytesting.ServiceUnavailableByPropertyInterceptor", 
+	//"interceptor.2": "org.distributeme.core.interceptor.availabilitytesting.ServerSideSlowDownByPropertyInterceptor",
+	//"interceptor.3": "org.distributeme.core.interceptor.availabilitytesting.ServerSideSlowDownByConfigurationInterceptor", 
+	
+	test: {
+		"flip": {
+			"interceptor.1": "org.distributeme.core.interceptor.availabilitytesting.FlippingServiceUnavailableByConfigurationInterceptor", 
+			"interceptor.2": "org.distributeme.core.interceptor.availabilitytesting.FlippingServerSideSlowDownByConfigurationInterceptor",
+			"interceptor.3": "org.distributeme.core.interceptor.availabilitytesting.FlippingServerSideSlowDownByConfigurationInterceptor"
+		}
+	}
+}  
