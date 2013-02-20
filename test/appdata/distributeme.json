@@ -8,8 +8,8 @@
 	logClientSideExceptions: false,
 	
 	
-	//"listener.1": "org.distributeme.core.listener.ServerLifecycleSysOutPrinterListener",
-	//"interceptor.1": "org.distributeme.core.interceptor.availabilitytesting.ServiceUnavailableByPropertyInterceptor", 
+	"listener.1": "org.distributeme.core.listener.ServerLifecycleSysOutPrinterListener",
+	"interceptor.1": "org.distributeme.core.interceptor.availabilitytesting.ServiceUnavailableByPropertyInterceptor", 
 	//"interceptor.2": "org.distributeme.core.interceptor.availabilitytesting.ServerSideSlowDownByPropertyInterceptor",
 	//"interceptor.3": "org.distributeme.core.interceptor.availabilitytesting.ServerSideSlowDownByConfigurationInterceptor", 
 	
